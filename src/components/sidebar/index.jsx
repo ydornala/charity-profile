@@ -1,9 +1,4 @@
 import React from 'react';
-import { GrHomeRounded, GrFavorite } from "react-icons/gr";
-import { PiPaperPlaneTiltFill, PiLeafLight } from 'react-icons/pi';
-import { FiPlusCircle } from "react-icons/fi";
-import { SlPieChart } from "react-icons/sl";
-import { IoLogOutOutline } from "react-icons/io5";
 import { ReactSVG } from 'react-svg';
 
 import Button from '../button';

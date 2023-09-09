@@ -1,8 +1,14 @@
 .layout-container {
   height: 100%;
+  display: flex;
 }
 
 .layout-container .l-left,
-.layout-container .l-left {
+.layout-container .l-right {
   height: inherit;
+}
+
+.layout-container .l-right {
+  width: 100%;
+  padding: 30px 60px 0 60px;
 }

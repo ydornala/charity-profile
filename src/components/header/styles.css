@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--main-black);
+}
+
+.header .header-actions {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.header .header-actions .ha-btn {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.header .header-actions .ha-btn.action-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  column-gap: 40px;
+  padding: 15px 20px;
+}
+
+.header .header-actions .ha-btn.action-dropdown .ha-drop-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.header .header-actions .ha-btn .action {
+  display: flex;
+  color: var(--main-black);
+  font-size: 20px;
+}

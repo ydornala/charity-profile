@@ -4,39 +4,48 @@ import { PiPaperPlaneTiltFill, PiLeafLight } from 'react-icons/pi';
 import { FiPlusCircle } from "react-icons/fi";
 import { SlPieChart } from "react-icons/sl";
 import { IoLogOutOutline } from "react-icons/io5";
+import { ReactSVG } from 'react-svg';
 
 import Button from '../button';
 import './styles.css';
 import Avatar from '../avatar';
 
+import HomeIcon from '../../assets/icons/home.svg';
+import SendIcon from "../../assets/icons/send.svg";
+import GiveIcon from '../../assets/icons/give.svg';
+import Favicon from '../../assets/icons/favorites.svg';
+import ActivityIcon from "../../assets/icons/group.svg";
+import LegacyIcon from '../../assets/icons/frame.svg';
+import LogoutIcon from '../../assets/icons/logout.svg';
+
 const menus = [{
-    icon: <GrHomeRounded/>,
+    icon: <ReactSVG src={HomeIcon}/>,
     label: 'Home',
     link: 'http://www.dummy.com'
 },{
-    icon: <PiPaperPlaneTiltFill/>,
+    icon: <ReactSVG src={SendIcon}/>,
     label: 'Grant',
     link: 'http://www.dummy.com'
 },{
-    icon: <FiPlusCircle/>,
+    icon: <ReactSVG src={GiveIcon}/>,
     label: 'Give',
     link: 'http://www.dummy.com'
 },{
-    icon: <GrFavorite/>,
+    icon: <ReactSVG src={Favicon}/>,
     label: 'Favorites',
     link: 'http://www.dummy.com'
 },{
-    icon: <SlPieChart/>,
+    icon: <ReactSVG src={ActivityIcon}/>,
     label: 'Activity',
     link: 'http://www.dummy.com'
 },{
-    icon: <PiLeafLight/>,
+    icon: <ReactSVG src={LegacyIcon}/>,
     label: 'Legacy',
     link: 'http://www.dummy.com'
 }];
 
 const belowMenu = [{
-    icon: <IoLogOutOutline/>,
+    icon: <ReactSVG src={LogoutIcon}/>,
     label: 'Logout',
     link: 'http://www.dummy.com'
 }]
@@ -56,7 +65,7 @@ const Sidebar = () => {
                         Louis Carter
                     </div>
                     <div className='line profile-edit'>
-                        <Button>Edit</Button>
+                        <Button className="simple">Edit</Button>
                     </div>
                 </div>
                 <div className='menu-wrapper'>

@@ -3,6 +3,7 @@ import Sidebar from '../components/sidebar';
 
 import './styles.css';
 import Header from '../components/header';
+import Content from '../components/content';
 
 const Layout = () => {
     return (
@@ -12,6 +13,7 @@ const Layout = () => {
             </div>
             <div className='l-right'>
                 <Header/>
+                <Content/>
             </div>
         </div>
     )

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 0 30px;
 }
 
 .header .header-title {
@@ -40,4 +41,36 @@
   display: flex;
   color: var(--main-black);
   font-size: 20px;
+}
+
+.vi-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.video-player {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.video-info .vi-row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.about-list .abouts {
+  margin: 0;
+}
+
+.about-item {
+  color: var(--main-black);
+  font-size: 1.2rem;
+  font-weight: 400;
 }

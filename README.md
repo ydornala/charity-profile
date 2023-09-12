@@ -1,5 +1,5 @@
 
-<img width="1800" alt="Screenshot 2023-09-09 at 8 37 39 PM" src="https://github.com/ydornala/charity-profile/assets/23229885/3ca886c1-b491-49f9-b54b-5f65da11f224">
+<img width="1800" alt="Screenshot 2023-09-12 at 1 45 20 PM" src="https://github.com/ydornala/charity-profile/assets/23229885/31615443-40c0-445f-912c-bb663dd20017">
 
 # Getting Started with Create React App
 

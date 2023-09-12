@@ -2,6 +2,8 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { ReactSVG } from "react-svg";
 
+import Button from '../button';
+
 import "./styles.css";
 
 // icons
@@ -15,6 +17,9 @@ import ReliefIcon from '../../assets/icons/relief.svg';
 import HumanityIcon from '../../assets/icons/humanity.svg';
 import WorldIcon from '../../assets/icons/world.svg';
 import MissionIcon from '../../assets/icons/mission.svg';
+import SendGrandIcon from '../../assets/icons/sendGrand.svg';
+import FavoriteIcon from '../../assets/icons/favorites.svg';
+import HeartStrokeIcon from '../../assets/icons/heart_stroke.svg';
 
 const abouts = [
   {
@@ -28,11 +33,57 @@ const abouts = [
   },
 ];
 
+const grants = [{
+  grant: '5',
+  subText: 'NCG givers',
+  mainText: 'have charity in their favorite charities list'
+}, {
+  grant: '$10',
+  mainText: 'grants to this charity (my fund)'
+}, {
+  grant: '$25,307',
+  mainText: 'grants to this charity (all funds)'
+}]
+
 const Content = () => {
   return (
     <div className="content">
       <div className="c-row">
         <div className="c-left">
+          <div className="card grant-info">
+            <div className="vi-row send-grant">
+              <div className="sg-logo-wrapper">
+                <div className="logo-container">
+                  <img className="logo" src="/images/logo.png" alt="logo" />
+                </div>
+                <div className="sg-text-wrapper">
+                  <div className="sg-main-text">Boys & Girls Clubs of Southern Maine</div>
+                  <div className="sg-location">
+                    <ReactSVG src={MapIcon} /> Portland, N/A
+                  </div>
+                </div>
+              </div>
+              <div className="sg-actions">
+                <div className="sg-actions-container">
+                  <Button className="primary">
+                    <ReactSVG src={SendGrandIcon} /> Send a grant
+                  </Button>
+                  <Button className="icon-button">
+                    <ReactSVG className="fav-btn" src={HeartStrokeIcon} />
+                  </Button>
+                </div>
+              </div>
+            </div>
+            <div className="vi-row grants">
+              {grants && grants.map((g, i) => {
+                return <div className="g-card" key={`grant-${i}`}>
+                  <div className="grant-overview"><span className="grant-value">{g.grant}</span> {g.subText && <span>{g.subText}</span>} </div>
+                  <div className="grant-main-text">{g.mainText}</div>
+                </div>
+              })}
+            </div>
+          </div>
+
           <div className="card video-info">
             <div className="vi-row">
               <div className="vi-title">Videos block</div>
@@ -102,7 +153,7 @@ const Content = () => {
             </div>
             <div className="ci-content">
               <div className="ci-content-row-pc">
-              <div>
+                <div>
                   <ReactSVG src={ReliefIcon} />
                 </div>
                 <div>
@@ -110,35 +161,35 @@ const Content = () => {
                 </div>
               </div>
 
-              <hr className="border"/>
+              <hr className="border" />
 
               <div className="cause-wrapper">
-              <div className="ci-title">Secondary causes:</div>
+                <div className="ci-title">Secondary causes:</div>
 
-            </div>
+              </div>
 
-<div className="ci-content-row-pc">
-              <div>
+              <div className="ci-content-row-pc">
+                <div>
                   <ReactSVG src={HumanityIcon} />
                 </div>
                 <div>
-                Humanitarian aid & development
+                  Humanitarian aid & development
                 </div>
               </div>
               <div className="ci-content-row-pc">
-              <div>
+                <div>
                   <ReactSVG src={WorldIcon} />
                 </div>
                 <div>
-                Environment
+                  Environment
                 </div>
               </div>
               <div className="ci-content-row-pc">
-              <div>
+                <div>
                   <ReactSVG src={MissionIcon} />
                 </div>
                 <div>
-                Evangelism & missions
+                  Evangelism & missions
                 </div>
               </div>
             </div>

@@ -1,0 +1,23 @@
+.primary {
+  background-color: var(--main-blue);
+  color: white;
+  padding: 15px 48px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 48px;
+  font-size: 1rem;
+  font-weight: 600;
+  column-gap: 8px;
+  white-space: nowrap;
+}
+
+.icon-button {
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid var(--main-blue);
+  width: 54px;
+  height: 54px;
+}
